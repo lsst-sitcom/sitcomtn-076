@@ -14,8 +14,8 @@
 % Optional subtitle
 % \setDocSubtitle{A subtitle}
 
-\author{%
-Several people, including Keith Bechtol and Steve Ritz
+\author{
+Keith Bechtol, Steve Ritz, and others
 }
 
 \setDocRef{SITCOMTN-076}
@@ -27,10 +27,10 @@ Several people, including Keith Bechtol and Steve Ritz
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-This document describes what information from the Construction project will be available to the community at each stage along the timeline from Camera integration through Survey start.
+This document describes what information from the Rubin Observatory Construction Project will be available to the community during the period from LSSTCam integration on the telescope through the start of LSST and release of commissioning data via the Early Science Program.
 %This document supplements the
 We provide additional details supplementing the Vera C. Rubin Observatory Data Policy, Project Publication Policy, and Rubin Observatory Data Security Standards Implementation to describe appropriate information sharing practices for Rubin Observatory staff and affiliates during the on-sky commissioning period.
-This document also includes a proposed set of guidelines for the Rubin Observatory Commissioning Team that are intended to promote the generation and dissemination of high-quality documentation to support the LSST science community.
+This document also includes a proposed set of guidelines for the Rubin Observatory Project Team that are intended to promote the generation and dissemination of high-quality documentation to support the LSST science community.
 }
 
 % Change history defined here.
@@ -52,14 +52,15 @@ This document also includes a proposed set of guidelines for the Rubin Observato
 % ADD CONTENT HERE
 % You can also use the \input command to include several content files.
 
-\begin{warning}[Drafting in Progress!]
-  This policy document is still under construction.
+\begin{warning}[Drafting in progress!]
+  This policy document is not yet released.
 \end{warning}
 
 \section{Motivation and Scope}
 
 The final stages of the Rubin Observatory Construction Project involving on-sky commissioning and science validation of the integrated system will be an exciting and dynamic time.
-During this period, new capabilities will be continuously added and tested. Our understanding of the technical and scientific performance of the Observatory will be rapidly advancing.
+During this period, new capabilities will be continuously added and tested.
+Our understanding of the technical and scientific performance of the Observatory will be rapidly advancing.
 In parallel, the operations team will be preparing to start the LSST and to release on-sky data products to the science community as part of the Early Science Program \citedsp{RTN-011}.
 
 For multiple reasons, Rubin Observatory needs clear and well-publicized policies on information sharing as a function of time during the on-sky commissioning phase.
@@ -70,12 +71,16 @@ For multiple reasons, Rubin Observatory needs clear and well-publicized policies
 
   \begin{itemize}
 
-    \item Commissioning and engineering data will be embargoed for all non-Project team members for 30 days.
+    \item Delayed public release of focal plane scientific data.
+    Engineering and commissioning imaging data will be embargoed for all non-Project team members for a period of at least 30 days following the observation.
     After this 30 day embargo, only with explicit approval may proprietary information, including data products from commissioning, be shared outside the Project team.
+    Data aside from focal plane scientific data may be made available following the original Project plan which includes astronomical metadata (within 24 hours), standard postage stamp images (within 60 sec) not corresponding to artificial Earth-orbiting satellites, and weather and sky monitoring data.
+    %Delay public release of focal plane scientific data for an embargo period of at least 80 hours following the observation.
+    %Hold engineering and commissioning imaging data for an embargo period of at least 30 days.
 
     \item Project team members are required to use only approved Project tools, platforms, and processes for communication, data access and analysis, documentation, software development, work management, etc.
     In practice, we expect most work done by the Project team on the commissioning data to be done within protected directories at the Rubin US Data Facility at SLAC.
-    Embargoed data will remain on designated project computers prior to release.
+    %Embargoed data will remain on designated project computers prior to release.
 
   \end{itemize}
 
@@ -108,8 +113,9 @@ Definitions:
   \item \textbf{Focal plane scientific data} corresponds to proprietary data products from on-sky imaging with LSSTCam as defined in the Rubin Data Policy \citedsp{RDO-013}.
 
   \item A \textbf{derived data product} is defined in the Rubin Data Policy \citedsp{RDO-013} as a data product that is derived from LSST proprietary data but that cannot be used to recreate any proprietary LSST data product(s).
+  %A representation of an image that cannot be used to recreate the array of pixel values of a proprietary data product (or other equivalent) is considered a derived data product.
 
-  A representation of an image that cannot be used to recreate the array of pixel values of a proprietary data product (or other equivalent) is considered a derived data product.
+  %\item \textbf{Postage stamps} are image cutouts that are $30 \times 30$ arcseconds, centered on an Object, and included in every Alert.
 
 \end{itemize}
 
@@ -119,9 +125,11 @@ The remainder of this document is organized as follows:
 
   \item Section \ref{early_science} provides an overview of the Early Science Program to place planned data delivery milestones in the context of system integration, commissioning, and verification and validation activities.
 
-  \item Section \ref{policy} describes what information from the Rubin Observatory Construction Project will be available to the community at each stage along the timeline from LSST Camera integration on the telescope through the start of the LSST.
+  \item Section \ref{policy} describes policy on what information from the Rubin Observatory Construction Project will be available to the community during the period from LSST Camera integration on the telescope through the start of the LSST and release of commissioning data via the Early Science Program.
   We define a process to approve the sharing of derived data products based on commissioning data prior to the associated release using technotes.
-  We discuss publications based on commissioning data, supplementing Vera C. Rubin Observatory Data Policy \citedsp{RDO-013} and Project Publication Policy \citep{LPM-162} with additional details pertinent to the commissioning period, including a proposed set of guidelines for the Project team to promote the generation and dissemination of high-quality documentation on the scientific performance.
+
+  \item Section \ref{publications} discuss publications based on commissioning data, supplementing Vera C. Rubin Observatory Data Policy \citedsp{RDO-013} and Project Publication Policy \citep{LPM-162} with additional details pertinent to the commissioning period.
+  We propose guidelines for the Project team to promote the generation and dissemination of high-quality documentation on the scientific performance.
 
   \item Section \ref{operations} concludes with brief comments regarding the transition to Operations.
 
@@ -130,7 +138,8 @@ The remainder of this document is organized as follows:
 \section{Early Science Program}
 \label{early_science}
 
-Rubin Observatory has planned an Early Science Program to enable high-impact science prior to the first annual data release of the LSST \citedsp{RTN-011}. Components of the Early Science Program include releasing science-grade commissioning data products via a series of Data Previews, ramping up of the transient alert stream during commissioning, implementing a program of incremental template generation to augment alert production in the early phases of the survey, and the first LSST Data Release, DR1, based on the first 6 months of data from the LSST.
+Rubin Observatory has planned an Early Science Program to enable high-impact science prior to the first annual data release of the LSST \citedsp{RTN-011}.
+Components of the Early Science Program include releasing science-grade commissioning data products via a series of Data Previews, ramping up of the transient alert stream during commissioning, implementing a program of incremental template generation to augment alert production in the early phases of the survey, and the first LSST Data Release, DR1, based on the first 6 months of data from the LSST.
 
 Figure \ref{timeline} shows an overview of the expected timeline for release of Early Science data products and supporting documentation for the technical and scientific performance of Rubin Observatory.
 
@@ -140,8 +149,20 @@ Figure \ref{timeline} shows an overview of the expected timeline for release of 
   \label{timeline}
 \end{figure}
 
-At the start of the LSST 10-year survey, if the processing pipelines are sufficiently stable as determined by the Project and reviewed by [the SAC?, Ops Data Release Board?], nightly Processed Visit Images (PVIs) and accompanying source catalogs will be released on a best-effort basis, subject to all embargo requirements.
-These would be labeled as Preliminary Data, with caveats and no accompanying information about calibration and no Project support for use until DP2.  After the Data Preview 2, commissioning SVV data PVIs and accompanying catalogs will be released within the standard time window for steady-state LSST operations (see \citedsp{RTN-011}).
+Information regarding the technical and scientific performance of Rubin Observatory will be made available to the science community via technotes (Section \ref{technotes}) and a set of Construction papers (Section \ref{publications}).
+
+\begin{warning}[Drafting in Progress!]
+  The timeline for the release of PVIs, and release of associated source catalogs, is being reviewed by the Project Change Control Board.
+\end{warning}
+
+To support early science by the community, at the start of the LSST 10-year survey, if the processing pipelines are sufficiently stable, nightly Processed Visit Images (PVIs) and accompanying source catalogs will be released on a best-effort basis.
+Release is subject to all embargo requirements, with caveats and preliminary calibration information.
+%as determined by the Project and reviewed by [the SAC?, Ops Data Release Board?]
+%These would be labeled as Preliminary Data, with
+%There will be caveats and preliminary information about calibration.
+% and no Project support for use until DP2.
+%After the Data Preview 2 release
+Within 6 months following the start of LSST, PVIs and source catalogs will be released within the standard time window for steady-state LSST operations (see \citedsp{RTN-011}).
 
 \section{Commissioning Era Information Sharing Policies}
 \label{policy}
@@ -150,12 +171,8 @@ These would be labeled as Preliminary Data, with caveats and no accompanying inf
 
 Project team members must follow policies for embargoed data products described in the Vera C. Rubin Observatory Data Policy \citedsp{RDO-013}, Project Publication Policy \citedsp{LPM-162}, and Rubin Observatory Data Security Standards Implementation (DMTN-199).
 
-During the period from installation of LSSTCam on the TMA to the release of Data Preview 2, all communications (including informal discussion) regarding proprietary engineering and on-sky data with LSSTCam are internal to Rubin Project by default.
-Outward-facing communications are reviewed by SIT-Com leadership, the Rubin Celebrations Organizing Committee (RCOC) and its relevant subgroups, and the Communications team, and are approved for release by the Project Director or designated alternate.
-
-Project team members are required to use only approved Project tools, platforms, and processes for communication, data access and analysis, documentation, software development, work management, etc.
-In practice, we expect most work done by the Project team on the commissioning data to be done within protected directories at the Rubin US Data Facility at SLAC.
-Embargoed data will remain on designated project computers prior to release.
+During the period from installation of LSSTCam on the telescope to the release of Data Preview 2, all communications (including informal discussion) regarding proprietary engineering and on-sky data with LSSTCam are internal to Rubin Project by default.
+Outward-facing communications, including all on-sky LSSTCam images, are reviewed by SIT-Com leadership, the Rubin Celebrations Organizing Committee (RCOC) and its relevant subgroups, and the Communications team, and are approved for release by the Project Director or designated alternate.
 
 Example outward-facing communications:
 
@@ -173,6 +190,12 @@ Example outward-facing communications:
 
 \end{itemize}
 
+Free and unfettered communication among Project team members is essential for commissioning success.
+%For proprietary data,
+Project team members are required to use only approved Project tools, platforms, and processes for communication, data access and analysis, documentation, software development, work management, etc.
+Derived data products are not subject to those restrictions, but are embargoed until approval for release (see Section \ref{technotes}).
+In practice, we expect most work done by the Project team on the commissioning data to be done within protected directories at the Rubin US Data Facility at SLAC.
+
 Prior to the release of associated data products as part of the Early Science program, derived data products from LSSTCam on-sky commissioning data may be shared beyond the Project team only in the following situations:
 
 \begin{enumerate}
@@ -183,9 +206,11 @@ Prior to the release of associated data products as part of the Early Science pr
 
 \end{enumerate}
 
+Derived data products representing visit, coadd, and difference images from LSSTCam on-sky commissioning, with the exception of standard postage stamp images not corresponding to artificial Earth-orbiting satellites, are embargoed for a period of 30 days following the observation.
+
 %Derived data products based on commissioning on-sky data will not be released for at least 80 hours following the observation.
 
-During the on-sky commissioning period with LSSTCam, members of the Project team are allowed to discuss technical details their work assignments outside the team, and they may freely discuss aspects that do NOT relate to specific on-sky data products from LSSTCam.
+During the on-sky commissioning period with LSSTCam, members of the Project team are allowed to discuss technical details of their work outside the team, and they may freely discuss aspects that do NOT relate to specific on-sky data products from LSSTCam or interim science performance.
 Discussion on the general status of commissioning should refer to Project-approved resources for information on the progress of commissioning activities (e.g., digests, news stories, published Project status on the Rubin Observatory website).
 
 \subsection{AuxTel, Electro-optical Datasets from ComCam and LSSTCam, and Non-proprietary Precursor Datasets}
@@ -205,35 +230,52 @@ A listing of technotes is available at \url{www.lsst.io}.
 
 During the on-sky commissioning period with LSSTCam, technotes are anticipated to be one of the primary mechanisms to share information about Rubin Observatory data with the science community.
 Project team members are encouraged to document their analyses in the form of technotes, e.g., to describe an algorithm or analysis software, to characterize and/or propose a solution to an outstanding issue, or to present the results of a science verification / validation study.
+Technotes may present science validation analyses, but are not intended to include novel scientific results / discoveries.
+Each technote should have a well defined scope.
 
 Prior to the associated Early Science release, technotes that involve proprietary on-sky LSSTCam data must be first drafted in a restricted space and reviewed/approved by the Project using a standard checklist in a timely manner before posting.
 This process will ensure that released technotes meet basic standards for documentation quality and conform to Rubin Observatory information release policies.
-Technotes are living documents that may be updated as studies progress.
-Once released, updated technotes must maintain compliance with approval checklist criteria.
+As living documents, technotes may describe work in progress and may be updated as studies progress.
+Once released, updated technote versions must maintain compliance with the approval checklist criteria.
 
 Derived data products may be documented and shared via technotes that have been approved for public release.
 
+%\section{Frequently Asked Questions}
+
 \subsection{Presentations}
 
-Approved derived data products may be openly discussed.
-When presenting on Rubin Observatory at institutional meetings, LSST Science Collaboration meetings, scientific conferences, etc., Project team members are responsible for following \href{https://www.lsst.org/scientists/codes-of-conduct}{professional standards of conduct} adopted by the Project.
+When presenting on Rubin Observatory technical and scientific performance at institutional meetings, LSST Science Collaboration meetings, scientific conferences, seminars and colloquia, etc., Project team members are responsible for following presentation guidelines adopted by the Project.
+The presentation content related to Rubin Observatory technical and scientific performance may only include released materials.
+%Approved derived data products may be openly discussed.
+%When presenting on Rubin Observatory at
+%\href{https://www.lsst.org/scientists/codes-of-conduct}{professional standards of conduct} adopted by the Project.
 
 \subsection{External Proposals}
 
-Members of the Project team may include descriptions of their commissioning activities to support external observing and grant proposals.
+Members of the Project team are welcome to include descriptions of their commissioning activities to support external grant proposals and observing proposals.
+Embargoed information cannot be included, except with specific approval of the Rubin Observatory Project Office.
 Approved derived data products may be included.
 
-\subsection{Student Dissertations and Theses}
+\subsection{Student Dissertations/Theses}
 
-In order to support students on the Project team who plan to use proprietary on-sky commissioning data as part of their dissertations / theses, the students and their academic advisors should consult with the SIT-Com leadership well in advance of their expected graduation.
+The commissioning-era information sharing policies apply to student dissertations and theses.
+% will follow the same policies for information sharing.
+Students on the Project team who plan to report results from analysis of proprietary on-sky LSSTCam commissioning data as part of their dissertation/thesis are can document their work via technotes, allowing time for release approval prior to circulating their draft with others outside the Project team.
+%consult with
+%In order to support students on the Project team who plan to use proprietary on-sky commissioning data as part of their dissertation or thesis,
+%the students and their academic advisors should consult with the SIT-Com leadership well in advance of circulating their draft to anyone outside the Project.
+% to discuss the expected commissioning time.
+%of their expected graduation.
 
 \section{Peer-reviewed Journal Publications}
+\label{publications}
 
 Rubin Observatory is drafting a set of \textbf{Construction Papers} to be published in peer-reviewed journals as part of the body of documentation to describe the technical and scientific performance of the as-built system.
 The Construction Papers are covered by the Project Publication Policy \citedsp{LPM-162}.
-The Construction Papers that describe scientific performance will be completed by the Data Preview 2 release date in order to support the community to write science papers based on Early Science data products (Alert Stream and Data Previews).
+The Construction Papers that describe scientific performance will be completed by the Data Preview 2 release date in order to support the community to write science papers based on Early Science data products.
 
-Members of the Project team might also contribute to science papers that use released commissioning data from the Early Science program. The Rubin Data Policy \citedsp{RDO-013} states:
+Members of the Project team might also contribute to science papers that use released commissioning data from the Early Science program.
+The Rubin Data Policy \citedsp{RDO-013} states:
 
 \begin{emph}
   DPOL-516 Science Data from Commissioning: Scientific analysis of the commissioning data will be an integral and necessary part of the science verification process.
@@ -242,26 +284,24 @@ Members of the Project team might also contribute to science papers that use rel
 \end{emph}
 
 Science papers that rely only on released Early Science data products are NOT covered by the Project Publication Policy.
-However, for any such papers that include members of the Project team as co-authors, we suggest the following guidelines to promote transparency:
-
-Science papers that rely only on released Early Science data products are NOT covered by the Project Publication Policy.
-However, for any such papers that include members of the Project team as co-authors, we suggest the following guidelines to promote transparency:
+However, for any such early science papers that include members of the Project team as co-authors and that describe work started during the proprietary period, we suggest the following guidelines to promote transparency:
 
 \begin{itemize}
 
   \item Project team (including in-kind) team members may begin writing science papers based on commissioning data prior to the release of associated Early Science data products.
 
-  \item The authors are encouraged (but not obliged) to announce plans for science publications as soon as possible within the Project team and welcome collaboration. They should discuss relevant publication policies (e.g., from LSST Science Collaborations) well in advance to avoid possible tensions.
+  \item The authors are encouraged (but not obliged) to announce plans for science publications as soon as possible within the Project team and welcome collaboration.
+  They should discuss relevant publication policies (e.g., from LSST Science Collaborations) well in advance to avoid possible tensions.
 
-  \item Members of the Project team are free to collaborate with individuals beyond the Project team on science papers that use Early Science data. The authors are welcome to inform their collaborators beyond the Project team about their intent to write such science papers; transparency is encouraged.
+  \item Members of the Project team are free to collaborate with others beyond the Project team on science papers that use Early Science data.
+  The authors are welcome to inform their collaborators beyond the Project team about their intent to write such science papers; transparency is encouraged.
+  Science paper processes, including reviews and approvals, are in the purview of the LSST Science Collaborations.
 
-  \begin{itemize}
-
-   \item  While commissioning data products cannot be shared prior to release, derived data products may be shared via approved technotes that can then be openly discussed. A technote could become the basis for a portion of a journal-reviewed publication.
-
-   \item Science paper processes, including reviews and approvals, are in the purview of the LSST Science Collaborations.
-
-  \end{itemize}
+  \item A technote describing science validation of on-sky commissioning data could become the basis for (parts of) a science paper submitted to a peer-review journal / the arXiv.
+  %Technotes are intended to describe Rubin Observatory infrastructure and science validation work, including analyses of technical and scientific performance during commissioning.
+  In general, scientific results beyond those directly related to technical and scientific performance may NOT be shared outside the Project team prior to the associated data release.
+  %While commissioning data products may NOT be shared prior to release, derived data products may be shared via approved technotes that can then be openly discussed.
+  Under extraordinary circumstances, the Project may publicly release scientific results and associated data earlier than the timeline shown in Figure \ref{timeline}.
 
   \item The authors are encouraged to circulate a draft within the Project team for comments several weeks in advance of submission / public posting.
   Since these non-infrastructure publications are not covered by the Project Publication Policy, there is no formal review by Rubin Observatory.
