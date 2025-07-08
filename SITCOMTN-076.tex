@@ -40,6 +40,7 @@ This document also includes a proposed set of guidelines for the Rubin Observato
   \addtohist{1}{2024-01-09}{Initial release version.}{Keith Bechtol}
   \addtohist{2}{2024-02-12}{Clarify definition of electro-optical data and special types of images that can be approved for release.}{Keith Bechtol}
   \addtohist{3}{2024-05-02}{Update for consistency with Rubin Obs communication channels data security implementation.}{Keith Bechtol}
+  \addtohist{4}{2025-07-08}{Updates for after First Look media event.}{Keith Bechtol}
 }
 
 
@@ -171,6 +172,8 @@ Example outward-facing communications:
 
   \item \href{https://www.lsst.org/about/project-status}{Published project status webpage}
 
+  \item \href{https://community.lsst.org/tag/commissioning-update}{Brief technical updates on the progress of on-sky commissioning activities} posted on the LSST Community forum on a roughly weekly cadence
+
   \item Rubin Observatory press releases / media events
 
   \item Social media posts
@@ -181,38 +184,64 @@ Example outward-facing communications:
 
 \end{itemize}
 
-Rubin Observatory outward-facing communications, including all on-sky ComCam and LSSTCam commissioning images, are reviewed by SIT-Com leadership, the Rubin Celebrations Organizing Committee (RCOC) and its relevant subgroups, the Communications team, and/or are approved for release by the Project Director or designated alternate.
+Prior to the First Look media event on 23 June 2025, Rubin Observatory outward-facing communications, including all on-sky ComCam and LSSTCam commissioning images, are reviewed by SIT-Com leadership, the Rubin Celebrations Organizing Committee (RCOC) and its relevant subgroups, the Communications team, and/or are approved for release by the Project Director or designated alternate.
 
 Free and unfettered communication among Project team members is essential for commissioning success.
-Project team members are required to use only approved Project tools, platforms, and processes for communication, data access and analysis, documentation, software development, work management, etc.
+Project team members are required to use only approved Project tools, platforms, and processes for communication, data access and analysis, documentation, software development, work management, etc., for infrastructure work involving embargoed data products.
 %Derived data products are not subject to those restrictions, but are embargoed until approval for release (see Section \ref{technotes}).
 In practice, we expect most work done by the Project team on the commissioning data to be done within protected directories at the Rubin US Data Facility at SLAC.
 \citedsp{DMTN-286} describes the implementation of data security protocols for Rubin Observatory communication channels.
 
-Prior to the release of associated data products as part of the Early Science program, derived data products from ComCam and LSSTCam on-sky commissioning data may approved for release by
-%may be shared beyond the Project team only in the following situations:
+\begin{note}[July 2025 update]
+This section has been updated following the First Look media event to clarify information sharing in this next phase of the commissioning effort.
+\end{note}
+
+Rubin Observatory seeks to promote open discussion of on-sky commissioning activities and associated data to help the broad Rubin community prepare for science with LSST data, within the \textbf{boundary conditions set by the Rubin Observatory data standards and the Rubin Data Policy (RDO-013).}
+To support this goal, during the on-sky commissioning period with ComCam and LSSTCam, members of the Project team may openly discuss technical details of their infrastructure work.
+Discussion on the general status of commissioning and interim science performance should refer to Project-approved resources where possible (e.g., digests, news stories, published Project status on the Rubin Observatory website, approved technotes).
+
+%\textbf{Boundary conditions around  must continue to be followed.}
+
+Non-image derived data products may be openly discussed and shared, provided that the following conditions are met:
 
 \begin{enumerate}
 
-  %\item the derived data product is approved for released in one of the official Rubin Observatory outward-facing communication channels;
-  \item being shared in one the official Rubin Observatory outward-facing communication channels and/or
+\item The presenter accepts responsibility for the accuracy of the information being presented (i.e., they are familiar enough with the material to answer questions and to provide appropriate context)
 
-  %\item the derived data product is documented as part of an approved technote (see Section \ref{technotes}).
-  \item being documented as part of an approved technote (see Section \ref{technotes}).
+\item The presenter believes that all parties involved (including their immediate manager) would not seriously object to openly discussing the work / results
 
 \end{enumerate}
 
-Incidental access to non-image derived data products based on unreleased ComCam and LSSTCam on-sky commissioning data might occur via Rubin Observatory communication channels that are shared with the community (e.g., github, Jira, Confluence); these should be understood as describing infrastructure work in progress.
+Derived data products that represent in-dome and on-sky images (including LSSTCam individual visit images, coadds, difference images) may be openly discussed and shared, provided that the above conditions are met, and critically, that \textbf{all data standards (including associated embargo periods) are followed.}
+Importantly, only representations of images may be shown (e.g., png), rather than transferring actual pixel data (e.g., FITS).
 
-Derived data products that represent visit, coadd, and difference images from ComCam and LSSTCam on-sky commissioning are embargoed for a period of at least 30 days following the observation, with the exception of alert postage stamp images and certain specifically approved types of images that illustrate technical performance aspects of the observatory (Section \ref{special_classes}).
+Communication involving on-sky data products that have not yet been released via the Early Science program is intended to help the broad Rubin community prepare for science with LSST data.
+Team members are encouraged to present science validation analyses, but the discussion is not intended to include novel scientific results / discoveries until the associated data products have been released via the Early Science Program.
 
-During the on-sky commissioning period with ComCam and LSSTCam, members of the Project team may discuss technical details of their infrastructure work outside the team.
+%Prior to the release of associated data products as part of the Early Science program, derived data products from ComCam and LSSTCam on-sky commissioning data may approved for release by
+%may be shared beyond the Project team only in the following situations:
+
+%\begin{enumerate}
+
+  %\item the derived data product is approved for released in one of the official Rubin Observatory outward-facing communication channels;
+  %\item being shared in one the official Rubin Observatory outward-facing communication channels and/or
+
+  %\item the derived data product is documented as part of an approved technote (see Section \ref{technotes}).
+  %\item being documented as part of an approved technote (see Section \ref{technotes}).
+
+%\end{enumerate}
+
+%Incidental access to non-image derived data products based on unreleased ComCam and LSSTCam on-sky commissioning data might occur via Rubin Observatory communication channels that are shared with the community (e.g., github, Jira, Confluence); these should be understood as describing infrastructure work in progress.
+
+In accordance with Rubin Observatory data standards, derived data products that represent visit, coadd, and difference images from ComCam and LSSTCam on-sky commissioning are embargoed for a period of at least 30 days following the observation, with the exception of alert postage stamp images and certain specifically approved types of images that illustrate technical performance aspects of the observatory (Section \ref{special_classes}).
+
+%During the on-sky commissioning period with ComCam and LSSTCam, members of the Project team may discuss technical details of their infrastructure work outside the team.
 %, but no aspects of any science result (unreleased information about astronomical phenomena above the Earth atmosphere) may be shared until after the associated data release.
 % provided that (1) it does not compromise the effectiveness of Rubin Observatory communications and (2) it does not relate to
 %, and they may freely discuss aspects that do NOT relate to specific on-sky data products from ComCam and LSSTCam.
 % or interim science performance.
 %Discussion beyond the Project team that involves unreleased on-sky data products from ComCam and LSSTCam should only reference information that is broadly accessible to the Rubin Observatory community via standard shared Rubin Observatory communication channels.
-Discussion on the general status of commissioning and interim science performance should refer to Project-approved resources (e.g., digests, news stories, published Project status on the Rubin Observatory website, approved technotes).
+%Discussion on the general status of commissioning and interim science performance should refer to Project-approved resources (e.g., digests, news stories, published Project status on the Rubin Observatory website, approved technotes).
 % for information on the progress of commissioning activities
 
 %In general, we are trying to maintain a broadly open system for Rubin Observatory.
@@ -247,15 +276,16 @@ Technotes may present science validation analyses, but are not intended to inclu
 Each technote should have a well defined scope.
 
 Technotes are drafted using development branches following the standard development workflow described at \url{https://developer.lsst.io/}.
-For technotes that involve proprietary on-sky ComCam and LSSTCam data, the review will include a standard checklist to ensure that released technotes meet basic standards for documentation quality and conform to Rubin Observatory information release policies.
-The content of a technote is considered to be approved for release once merged to the main branch.
+%For technotes that involve proprietary on-sky ComCam and LSSTCam data, the review will include a standard checklist to ensure that released technotes meet basic standards for documentation quality and conform to Rubin Observatory information release policies.
+%The content of a technote is considered to be approved for release once merged to the main branch.
 During development, embargoed pixel images can only be referenced in technotes as authenticated links —- pixel images (e.g., PNGs) must NOT appear in technotes until specifically approved for release.
 %Prior to the associated Early Science release, technotes that involve proprietary on-sky ComCam and LSSTCam data must be first drafted in a restricted space and reviewed/approved by the Project using a standard checklist in a timely manner before posting.
 %This process will ensure that released technotes meet basic standards for documentation quality and conform to Rubin Observatory information release policies.
 As living documents, technotes may describe work in progress and may be updated as studies progress.
-Once released, updated technote versions must maintain compliance with the approval checklist criteria.
+%Once released, updated technote versions must maintain compliance with the approval checklist criteria.
 
-Derived data products may be documented and shared via technotes that have been approved for release.
+Derived data products may be documented and shared via technotes.
+% that have been approved for release.
 
 \subsection{Approving Special Types of Pixel-level On-sky Images for Release}
 \label{special_classes}
@@ -284,18 +314,20 @@ Examples of these special types of images are reviewed and approved for release 
 \subsection{Presentations}
 
 When presenting on Rubin Observatory technical and scientific performance at institutional meetings, LSST Science Collaboration meetings, scientific conferences, seminars and colloquia, etc., Project team members are responsible for following presentation guidelines adopted by the Project.
-The presentation content related to Rubin Observatory technical and scientific performance may only include released materials.
+%The presentation content related to Rubin Observatory technical and scientific performance may only include released materials.
+As noted above, following the First Look media event, image and non-image derived data products may be openly discussed and included in such presentations, provided that the required boundary conditions and other criteria are met.
 
 \subsection{External Proposals}
 
 Members of the Project team are welcome to include descriptions of their commissioning activities to support external grant proposals and observing proposals.
 Embargoed information cannot be included, except with specific approval of the Rubin Observatory Project Office.
-Approved derived data products may be included.
+%Approved derived data products may be included.
 
 \subsection{Student Dissertations/Theses}
 
 The commissioning-era information sharing policies apply to student dissertations and theses.
-Students on the Project team who intend to report results from analysis of unreleased on-sky ComCam and LSSTCam commissioning data as part of their dissertation/thesis are advised to document their work via technotes so that approved results can be shared outside the Project team.
+As noted above, following the First Look media event, image and non-image derived data products may be openly discussed and included in dissertations and theses, provided that the required boundary conditions and other criteria are met.
+%Students on the Project team who intend to report results from analysis of unreleased on-sky ComCam and LSSTCam commissioning data as part of their dissertation/thesis are advised to document their work via technotes so that approved results can be shared outside the Project team.
 
 \section{Peer-reviewed Journal Publications}
 \label{publications}
